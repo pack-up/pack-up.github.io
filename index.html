@@ -12,23 +12,38 @@
 
     </head>
 
-    <body class="bg-gray-600 text-slate-100">
+    <body class="bg-gray-600 decoration-2 text-slate-100">
 
         <nav
-            class="bg-gray-800 flex items-center justify-between px-6 py-4 text-xl"
+            class="bg-gray-800 flex items-center justify-between px-6 py-4 text-2xl"
             role="navigation"
         >
             <div class="flex items-center">
                 <img class="h-12" src="./assets/logo.png">
                 <img class="h-12" src="./assets/text.png">
             </div>
-            <div class="flex">
-                <a class="m-4" href="#">About</a>
-                <a class="m-4" href="#">Pricing</a>
-                <a class="m-4" href="#">Products</a>
+            <div class="hidden md:flex">
+                <a class="mx-5" href="#slides">Slides</a>
+                <a class="mx-5" href="#products">Products</a>
             </div>
-            <a class="bg-emerald-500 px-6 py-2 rounded-xl" href="#">Buy</a>
+            <a class="bg-emerald-500 px-6 py-2 rounded-xl" href="#buy">Buy</a>
         </nav>
+
+        <main class="m-6 text-center text-lg">
+            <img class="mx-auto" src="./assets/text.png">
+            <h2 class="text-3xl" id="slides">Slides</h2>
+            <br>
+            <iframe
+                allowfullscreen="true" class="mx-auto" frameborder="0" height="505"
+                mozallowfullscreen="true"
+                src="https://docs.google.com/presentation/d/e/2PACX-1vQehk-qJ8H_1UQzH7On1_8bPzwke8teNy_5X9QySjvqjbS9j60MZCLj5yVDiQ7tfuMI4zc1bROL1MD3/embed?start=false&loop=false&delayms=3000"
+                webkitallowfullscreen="true" width="853"
+            ></iframe>
+            <br>
+            <h2 class="text-3xl" id="products">Products</h2>
+            <br>
+            <h2 class="text-3xl" id="buy">Buy</h2>
+        </main>
 
     </body>
 
