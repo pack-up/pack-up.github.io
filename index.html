@@ -4,9 +4,9 @@
 
     <head>
 
-        <link href="./index.css" rel="stylesheet">
+        <link href="./assets/css/index.css" rel="stylesheet">
 
-        <link href="./assets/logo.png" rel="shortcut icon" type="image/png">
+        <link href="./assets/images/logo.png" rel="shortcut icon" type="image/png">
 
         <title>Pack Up</title>
 
@@ -19,31 +19,42 @@
             role="navigation"
         >
             <div class="flex items-center">
-                <img class="h-12" src="./assets/logo.png">
-                <img class="h-12" src="./assets/text.png">
+                <img class="h-12" src="./assets/images/logo.png">
+                <img class="h-12" src="./assets/images/text.png">
             </div>
             <div class="hidden md:flex">
                 <a class="mx-5" href="#slides">Slides</a>
                 <a class="mx-5" href="#products">Products</a>
+                <a class="mx-5" href="#gallery">Gallery</a>
             </div>
-            <a class="bg-emerald-500 px-6 py-2 rounded-xl" href="#buy">Buy</a>
+            <a class="bg-emerald-500 px-6 py-2 rounded-xl" href="#" onclick="showMessage();">
+                Order
+            </a>
         </nav>
+        <div class="hidden" id="message-container">
+            <div class="flex justify-between px-10">
+                <p>We're not selling this right now.</p>
+                <span onclick="hideMessage();">&times;</span>
+            </div>
+        </div>
 
         <main class="m-6 text-center text-lg">
-            <img class="mx-auto" src="./assets/text.png">
+            <img class="mx-auto" src="./assets/images/text.png">
             <h2 class="text-3xl" id="slides">Slides</h2>
             <br>
             <iframe
-                allowfullscreen="true" class="mx-auto" frameborder="0" height="505"
+                allowfullscreen="true" class="h-96 mx-auto w-3/6" frameborder="0"
                 mozallowfullscreen="true"
                 src="https://docs.google.com/presentation/d/e/2PACX-1vQehk-qJ8H_1UQzH7On1_8bPzwke8teNy_5X9QySjvqjbS9j60MZCLj5yVDiQ7tfuMI4zc1bROL1MD3/embed?start=false&loop=false&delayms=3000"
-                webkitallowfullscreen="true" width="853"
+                webkitallowfullscreen="true"
             ></iframe>
             <br>
             <h2 class="text-3xl" id="products">Products</h2>
             <br>
-            <h2 class="text-3xl" id="buy">Buy</h2>
+            <h2 class="text-3xl" id="gallery">Gallery</h2>
         </main>
+
+        <script src="./assets/javascript/index.js"></script>
 
     </body>
 
