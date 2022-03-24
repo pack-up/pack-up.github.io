@@ -33,8 +33,12 @@
             </a>
         </nav>
         <div class="hidden" id="message-container">
-            <div class="flex justify-between px-10">
-                <p>We're not selling this right now.</p>
+            <div class="bg-fuchsia-700 flex justify-between px-10 py-3">
+                <p>
+                    We're
+                    <b>not</b>
+                    actually selling anything.
+                </p>
                 <span onclick="hideMessage();">&times;</span>
             </div>
         </div>
@@ -52,34 +56,46 @@
             <br>
             <h2 class="text-3xl" id="products">Products</h2>
             <br>
+            <!-- Didn't want to Tailwind this entire thing. -->
             <div class="cards">
                 <section>
-                    <h2>Pack Up Classic</h2>
-                    <img alt="Classic" src="./assets/images/products/classic.jpeg">
                     <br>
-                    <b>The Classic Pack Up bag, since 2022.</b>
+                    <b>Pack Up Classic</b>
+                    <img alt="Classic" src="./assets/images/products/classic.png">
+                    <em>The Classic Pack Up bag</em>
                 </section>
                 <section>
-                    <h2>Pack Up Natural</h2>
-                    <img alt="Natural" src="./assets/images/products/natural.jpeg">
                     <br>
-                    <b>Made from all-natural materials.</b>
+                    <b>Pack Up Natural</b>
+                    <img alt="Natural" src="./assets/images/products/natural.png">
+                    <em>Great for a hike</em>
                 </section>
                 <section>
-                    <h2>Pack Up Totepack</h2>
+                    <br>
+                    <b>Pack Up Totepack</b>
                     <img alt="Totepack" src="./assets/images/products/totepack.png">
-                    <br>
-                    <b>Great for a small trip.</b>
+                    <em>Great for a small trip</em>
                 </section>
                 <section>
-                    <h2>Pack Up Pouch</h2>
-                    <img alt="Pouch" src="./assets/images/products/pouch.jpeg">
                     <br>
-                    <b>A portable pouch for storage.</b>
+                    <b>Pack Up Pouch</b>
+                    <img alt="Pouch" src="./assets/images/products/pouch.png">
+                    <em>A portable pouch</em>
                 </section>
             </div>
             <br>
             <h2 class="text-3xl" id="gallery">Gallery</h2>
+            <br>
+            <!-- Tailwind ok -->
+            <div class="flex justify-center" id="gallery">
+                <img class="h-40 rounded-xl" src="./assets/images/gallery/1.png">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="h-40 rounded-xl" src="./assets/images/gallery/2.png">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="h-40 rounded-xl" src="./assets/images/gallery/3.png">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <img class="h-40 rounded-xl" src="./assets/images/gallery/4.png">
+            </div>
         </main>
 
         <script src="./assets/javascript/index.js"></script>

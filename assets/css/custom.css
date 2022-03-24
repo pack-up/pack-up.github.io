@@ -1,3 +1,15 @@
+#gallery > img {
+
+    transition: all .2s ease-in-out;
+
+}
+
+#gallery > img:hover {
+
+    transform: scale(2);
+
+}
+
 .cards {
 
     border-width: 0;
@@ -30,9 +42,9 @@
 
     height: 350px;
 
-    min-width: 275px;
+    min-width: 280px;
 
-    width: 275px;
+    width: 280px;
 
     transition-duration: 300ms;
     transition-property: transform;
@@ -68,6 +80,8 @@
 .cards > section > img {
 
     border-radius: 15px;
+
+    margin: 16px 40px;
 
     width: 200px;
 
