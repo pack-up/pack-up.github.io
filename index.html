@@ -54,6 +54,9 @@
                 webkitallowfullscreen="true"
             ></iframe>
             <br>
+            <em>Slides not working? Try Firefox!</em>
+            <br>
+            <br>
             <h2 class="text-3xl" id="products">Products</h2>
             <br>
             <!-- Didn't want to Tailwind this entire thing. -->
@@ -62,43 +65,54 @@
                     <br>
                     <b>Pack Up Classic</b>
                     <img alt="Classic" src="./assets/images/products/classic.png">
-                    <em>The Classic Pack Up bag</em>
+                    <em>
+                        The Classic Pack Up bag
+                        <br>
+                        Price: $25
+                    </em>
                 </section>
                 <section>
                     <br>
                     <b>Pack Up Natural</b>
                     <img alt="Natural" src="./assets/images/products/natural.png">
-                    <em>Great for a hike</em>
+                    <em>
+                        Great for a hike
+                        <br>
+                        Price: $28
+                    </em>
                 </section>
                 <section>
                     <br>
                     <b>Pack Up Totepack</b>
                     <img alt="Totepack" src="./assets/images/products/totepack.png">
-                    <em>Great for a small trip</em>
+                    <em>
+                        Great for a small trip
+                        <br>
+                        Price: $17
+                    </em>
                 </section>
                 <section>
                     <br>
                     <b>Pack Up Pouch</b>
                     <img alt="Pouch" src="./assets/images/products/pouch.png">
-                    <em>A portable pouch</em>
+                    <em>
+                        A portable pouch
+                        <br>
+                        Price: $11
+                    </em>
                 </section>
             </div>
             <br>
             <h2 class="text-3xl" id="gallery">Gallery</h2>
             <br>
-            <!-- Tailwind ok -->
-            <div class="flex justify-center" id="gallery">
-                <img class="h-40 rounded-xl" src="./assets/images/gallery/1.png">
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="h-40 rounded-xl" src="./assets/images/gallery/2.png">
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="h-40 rounded-xl" src="./assets/images/gallery/3.png">
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="h-40 rounded-xl" src="./assets/images/gallery/4.png">
-            </div>
+            <img
+                class="h-96 mx-auto rounded-xl" id="gallery-image"
+                src="./assets/images/gallery/1.png"
+            >
             <br>
-            <br>
-            <br>
+            <button class="bg-fuchsia-700 px-6 py-2 rounded-xl" onclick="nextImage();">
+                Next &#8594;
+            </button>
         </main>
 
         <script src="./assets/javascript/index.js"></script>
