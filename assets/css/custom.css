@@ -18,6 +18,14 @@
 
 }
 
+#nextButton:hover {
+
+    background-color: #86198f;
+
+    transition: background-color 500ms;
+
+}
+
 .cards {
 
     border-width: 0;
@@ -89,7 +97,7 @@
 
     border-radius: 15px;
 
-    margin: 16px 40px;
+    margin: 16px 44px;
 
     width: 200px;
 
@@ -99,6 +107,14 @@ nav > div > a:hover {
 
     transition: color 500ms;
 
-    color: #e879f9 !important;
+    color: #e879f9;
+
+}
+
+nav > a:hover {
+
+    background-color: #059669;
+
+    transition: background-color 500ms;
 
 }
