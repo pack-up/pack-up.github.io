@@ -27,6 +27,7 @@
                 <a class="mx-5" href="#slides">Slides</a>
                 <a class="mx-5" href="#products">Products</a>
                 <a class="mx-5" href="#gallery">Gallery</a>
+                <a class="mx-5" href="#nfts">NFTs</a>
             </div>
             <a class="bg-emerald-500 px-6 py-2 rounded-xl" href="#" onclick="showMessage();">
                 Order
@@ -35,9 +36,8 @@
         <div class="hidden" id="message-container">
             <div class="bg-fuchsia-700 flex justify-between px-10 py-3">
                 <p>
-                    We're
-                    <b>not</b>
-                    actually selling anything.
+                    Not selling backpacks, selling NFTs
+                    <a class="underline underline-offset-2" href="#nfts">here</a>.
                 </p>
                 <span onclick="hideMessage();">&times;</span>
             </div>
@@ -116,9 +116,41 @@
             >
                 Next &#8594;
             </button>
+            <br>
+            <br>
+            <h2 class="text-3xl" id="nfts">NFT Collection</h2>
+            <br>
+            <nft-card
+                contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e" height="300px"
+                tokenId="14416746685742182458049006495296578204465053518453844281374971660429695123457"
+                width="60vw"
+            >
+            </nft-card>
+            <br>
+            <nft-card
+                contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e" height="300px"
+                tokenId="14416746685742182458049006495296578204465053518453844281374971661529206751233"
+                width="60vw"
+            >
+            </nft-card>
+            <br>
+            <nft-card
+                contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e" height="300px"
+                tokenId="14416746685742182458049006495296578204465053518453844281374971663728230006785"
+                width="60vw"
+            >
+            </nft-card>
+            <br>
+            <nft-card
+                contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e" height="300px"
+                tokenId="14416746685742182458049006495296578204465053518453844281374971662628718379009"
+                width="60vw"
+            >
+            </nft-card>
         </main>
 
         <script src="./assets/javascript/index.js"></script>
+        <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
 
     </body>
 
